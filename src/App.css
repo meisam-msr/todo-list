@@ -1,10 +1,10 @@
 .App {
-  /* width: 100vw; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 .App h1 {
   margin-bottom: 30px;
@@ -14,17 +14,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40rem;
+  /* width: 40rem; */
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
 }
+.todosContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .todo {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  width: 20rem;
   margin: 10px 0;
 }
 .todoText {
@@ -39,7 +45,6 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 5px 3px;
-  width: 200px;
 }
 input:focus {
   border: 2px solid #6d28d9;
@@ -74,13 +79,13 @@ input:focus {
   background-color: #a76dff;
 }
 header {
+  font-size: 12px;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   margin-bottom: 30px;
 }
 header span {
-  margin-right: 20px;
-  display: inline-block;
   width: 20px;
   font-size: 14px;
   height: 20px;
@@ -90,4 +95,19 @@ header span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 641px) {
+  header {
+    font-size: medium;
+  }
+  .container {
+    padding: 20px;
+    width: 40rem;
+  }
+  input {
+    width: 200px;
+  }
+  .todo{
+    width: 20rem;
+  }
 }

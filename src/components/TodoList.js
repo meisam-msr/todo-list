@@ -27,7 +27,7 @@ const TodoList = ({ todos, onComplete, onDelete, onUpdate }) => {
   };
 
   return (
-    <div>
+    <div className="todosContainer">
       {edit.id ? <TodoForm submitTodo={editTodo} edit={edit} /> : renderTodos()}
     </div>
   );

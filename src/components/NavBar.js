@@ -7,11 +7,11 @@ const options = [
 ];
 
 const NavBar = ({ unCompletedTodos, onChange, selectedOption }) => {
-  if (!unCompletedTodos) return <h2>set your today todos !</h2>;
+  if (!unCompletedTodos) return <h3>set your today todos !</h3>;
 
   return (
     <header>
-      <span> {unCompletedTodos}</span> <h2> are not completed </h2>
+      <span> {unCompletedTodos}</span> <h3> are not completed </h3>
       <Select onChange={onChange} value={selectedOption} options={options} />
       {/* <select onChange={onSelect} value={status}>
         <option value="All">All</option>
